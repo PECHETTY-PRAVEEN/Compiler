@@ -9,12 +9,24 @@
     <div class="code_section">
 <form method="post">
     {% csrf_token %}
-    <label for ="code">Code:</label>
+    <label for ="code"><h2>Code:</h2></label>
+    <table >
+        <tr><td>
+    <label for="language">Select a Programming Language:</label>
+                        <select name="language" id="language">
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="c++" disabled>C++</option>
+                        <option value="java" selected>Java</option>
+                        </select></td></tr>
+        <tr><td>
     <textarea id="code" name="code" rows=10 >{{code}}</textarea>
-    <button type="submit">submit</button>
+    </td></tr>
+    <tr><td><button type="submit">submit</button></td></tr>
 </form>
 </div>
 <div class="result_section">
+</table>
 <h3>output:</h3>
 <br>
     {{output}}
