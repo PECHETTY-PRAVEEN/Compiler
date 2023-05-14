@@ -1,0 +1,17 @@
+div{
+    text-align: center;
+    font-size: medium;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 98%;
+}
+.code_section{
+    background-color: white;
+}
+.output_section{
+    background-color: white;
+}
